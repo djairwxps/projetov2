@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando java script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="divpai">
+
+        <div id="div1"> 
+            
+        </div>
+        
+    </div>
+    <div id="div-input">
+        <input  type="text" name="" id="input" onchange="mudou()">
+        
+    </div>
+    <div id="div-pai-aviso">
+        <h1 id="h1-aviso">👆 Digite aqui 👆 </h1>
+    </div>
+
+    <div id="div-h1-final">
+        <h1 id="h1-final">
+            Feito por Djair
+        </h1>
+    </div>
+
+    
+
+
+    <script>
+        function mudou() {
+        var div_exemp = document.getElementById("div1")
+        var input_text = document.getElementById("input")
+
+        div_exemp.style.backgroundColor = input_text.value
+        div_exemp.style.borderRadius = input_text.value
+
+        }
+
+    </script>
+</body>
+</html>
